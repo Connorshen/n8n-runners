@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 关键：给GITHUB_TOKEN授予推送镜像的权限（必须加）
     permissions:
       packages: write  # 允许推送GHCR镜像
       contents: read   # 允许拉取仓库代码（默认已有，可省略）
